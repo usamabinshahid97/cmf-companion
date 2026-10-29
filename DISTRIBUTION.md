@@ -1,6 +1,6 @@
 # Distributing CMF Companion
 
-The app source and releases are hosted at <https://github.com/usamabinshahid97/cmf-companion>. The cask lives in <https://github.com/usamabinshahid97/homebrew-cmf-companion>.
+The app source and releases are hosted at <https://github.com/usamabinshahid97/cmf-companion>. The cask lives in <https://github.com/usamabinshahid97/homebrew-tap>.
 
 The current public binary is version **1.1.5**, build **9**, for **arm64 / macOS 14+**. It uses an ad hoc signature. It is not Developer ID signed or Apple notarized. Users may need Apple's per-app **Open Anyway** flow on first launch. The cask preserves Homebrew's normal quarantine behavior and never changes Gatekeeper settings.
 
@@ -17,10 +17,12 @@ The current public binary is version **1.1.5**, build **9**, for **arm64 / macOS
 The public install command is:
 
 ```sh
-brew install --cask usamabinshahid97/cmf-companion/cmf-companion
+brew install --cask usamabinshahid97/tap/cmf-companion
 ```
 
 Homebrew automatically clones the tap. Current Homebrew versions may ask users to trust the cask; confirmation belongs to the user. Keep this explicit rather than recommending trust of unrelated packages.
+
+The original `usamabinshahid97/cmf-companion` tap is retained as a migration entry to `usamabinshahid97/tap/cmf-companion`, so the original, longer install command continues to resolve. Publish future cask updates only in `homebrew-tap`; do not replace the migration with a second independently maintained cask.
 
 ## Signing later
 

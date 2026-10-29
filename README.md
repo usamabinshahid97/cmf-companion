@@ -13,10 +13,10 @@ Requires an **Apple Silicon Mac**, **macOS 14 or later**, and **CMF Buds 2 (B179
 With [Homebrew](https://brew.sh) installed:
 
 ```sh
-brew install --cask usamabinshahid97/cmf-companion/cmf-companion
+brew install --cask usamabinshahid97/tap/cmf-companion
 ```
 
-Homebrew adds the [CMF Companion tap](https://github.com/usamabinshahid97/homebrew-cmf-companion) automatically. If your Homebrew version asks whether to trust this third-party cask, review the repository and confirm if you trust it. This is a community tap maintained with the app.
+Homebrew adds the [CMF Companion tap](https://github.com/usamabinshahid97/homebrew-tap) automatically. If your Homebrew version asks whether to trust this third-party cask, review the repository and confirm if you trust it. This is a community tap maintained with the app.
 
 Launch **CMF Companion** from Applications. This release is **ad hoc signed and is not Apple notarized**. If macOS blocks its first launch, try opening it once, then use **System Settings → Privacy & Security → Open Anyway** if you trust this release. See [Apple's instructions](https://support.apple.com/en-ie/102445). Developer ID signing and notarization are planned; Homebrew installation does not remove this first-launch requirement.
 
@@ -26,7 +26,7 @@ To update, quit CMF Companion from its More menu, then run:
 
 ```sh
 brew update
-brew upgrade --cask usamabinshahid97/cmf-companion/cmf-companion
+brew upgrade --cask usamabinshahid97/tap/cmf-companion
 ```
 
 To remove it, quit the app and run `brew uninstall --cask cmf-companion`. App preferences are preserved; use `brew uninstall --cask --zap cmf-companion` to remove those too. Removing the app does not unpair your buds or reset their settings.
