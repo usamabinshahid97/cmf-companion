@@ -22,7 +22,7 @@ brew install --cask usamabinshahid97/tap/cmf-companion
 
 Homebrew automatically clones the tap. Current Homebrew versions may ask users to trust the cask; confirmation belongs to the user. Keep this explicit rather than recommending trust of unrelated packages.
 
-The original `usamabinshahid97/cmf-companion` tap is retained as a migration entry to `usamabinshahid97/tap/cmf-companion`, so the original, longer install command continues to resolve. Publish future cask updates only in `homebrew-tap`; do not replace the migration with a second independently maintained cask.
+The original `usamabinshahid97/cmf-companion` tap is retained as a compatibility copy so existing installation links continue to work without an extra tap step. For each release, copy the canonical `Casks/cmf-companion.rb` from `homebrew-tap` into `homebrew-cmf-companion` and publish it there too. Its CI verifies that both casks match. If both taps are present, use the fully qualified name to avoid short-name ambiguity.
 
 ## Signing later
 
